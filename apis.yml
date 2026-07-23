@@ -1,7 +1,28 @@
 aid: alltricks
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/alltricks.png
 name: Alltricks
-description: 'Alltricks is a company surfaced as a portfolio company of partech and added to the API Evangelist
-  network as a stub for enrichment. Sector: Consumer. This profile is a lead awaiting the enrichment pipeline.'
+description: >-
+  Alltricks is a French online retailer specializing in cycling, running, and
+  outdoor / mountain-sports equipment. Founded in 2008 and headquartered near
+  Paris in Saint-Cyr-l'Ecole (Yvelines), France, the company sells bikes and
+  frames, components and parts, apparel, footwear, nutrition, and accessories
+  across France and multiple European markets. Alltricks operates as a
+  direct-to-consumer e-commerce storefront at alltricks.fr and was an early
+  Partech portfolio company. As of this pipeline run the company publishes no
+  public developer API, developer portal, OpenAPI definition, or /.well-known/
+  discovery surface; this profile captures its identity and the domain-security
+  posture of its production host.
 url: https://raw.githubusercontent.com/api-evangelist/alltricks/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -15,6 +36,12 @@ modified: '2026-07-17'
 tags:
 - Company
 - Consumer
+- E-commerce
+- Retail
+- Cycling
+- Sports
+- Bicycle
+- Outdoor
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +49,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/alltricks-domain-security.yml
 - type: Website
-  url: http://alltricks.fr/
+  url: https://www.alltricks.fr/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
